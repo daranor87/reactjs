@@ -1,5 +1,5 @@
 import React from 'react';
-import Curso from './Curso';
+import CourseCard from '../Molecules/CourseCard';
 
 const cursos = [
     {
@@ -36,10 +36,10 @@ const cursos = [
     }
   ]
 
-const CursoGrid = () => (
+const Course = () => (
     <div className="ed-grid m-grid-4">
         { cursos.map(c => (
-        <Curso 
+        <CourseCard
             key={c.id}
             id={c.id}
             tituloCurso = {c.tituloCurso}
@@ -52,4 +52,4 @@ const CursoGrid = () => (
     </div>
 )
 
-export default CursoGrid
+export default Course

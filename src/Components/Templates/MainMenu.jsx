@@ -10,6 +10,7 @@ const MainMenu = () => (
                     <ul>
                         <li><NavLink to="/" activeClassName="activo" exact>Home</NavLink></li>
                         <li><NavLink to="/cursos" activeClassName="activo">Cursos</NavLink></li>
+                        <li><NavLink to="/usuarios" activeClassName="activo">Usuarios</NavLink></li>
                         <li><NavLink to="/formulario" activeClassName="activo">Formulario</NavLink></li>
                     </ul>
                 </nav>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 //const persona = {"nombre": "Alberto", "apellido": "Quiroga", "edad": 29}
 //const Curso = props => (
 //props.tituloCurso
-const Curso = ({id, tituloCurso, imagenCurso, profesor, imageProfesorCurso, precio}) => (
+const CourseCard = ({id, tituloCurso, imagenCurso, profesor, imageProfesorCurso, precio}) => (
     <article className="card">
         <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
             <Link to={`/cursos/${id}`}><img src={imagenCurso} alt={tituloCurso} /></Link>
@@ -31,14 +31,14 @@ const Curso = ({id, tituloCurso, imagenCurso, profesor, imageProfesorCurso, prec
     </article>
 )
 
-Curso.propTypes = {
+CourseCard.propTypes = {
     tituloCurso: PropTypes.string,
     imagenCurso: PropTypes.string,
     imageProfesorCurso: PropTypes.string,
     precio: PropTypes.string,
     profesor: PropTypes.string,
 }
-Curso.defaultProps = {
+CourseCard.defaultProps = {
     tituloCurso: "No se encontro un título",
     imagenCurso: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/1200px-Flag_of_Peru.svg.png",
     imageProfesorCurso: "https://api.ed.team/files/avatars/66813820-2857-4af9-b84f-9196acbb832e.jpg",
@@ -46,4 +46,4 @@ Curso.defaultProps = {
     profesor: "Norwin Davila",
 }
 
-export default Curso;
+export default CourseCard;

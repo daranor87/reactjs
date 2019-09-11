@@ -35,7 +35,7 @@ const cursos = [
     }
   ]
 
-const CursoInt = ({match}) => {
+const CourseInt = ({match}) => {
 
     const cursoActual = cursos.filter(c => c.id === parseInt(match.params.id))[0];
     return (
@@ -60,4 +60,4 @@ const CursoInt = ({match}) => {
     )
 }
 
-export default CursoInt
+export default CourseInt
