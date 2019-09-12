@@ -61,3 +61,48 @@ const CourseInt = ({match}) => {
 }
 
 export default CourseInt
+
+
+/*class CourseInt extends Component {
+
+    constructor(props){
+        super(props)
+        this.state = {
+            cursoActual: {}
+        }
+    }
+
+    componentDidMount(){
+        axios.get(`http://my-json-server.typicode.com/daranor87/json-db/cursos/${this.props.match.params.id}`)
+        .then(resp => 
+                {
+                    this.setState({
+                        cursoActual: resp.data
+                    })
+                }
+            )
+    }
+    render(){
+        return (
+            <div className="ed-grid m-grid-3">
+                {
+                    this.state.cursoActual ? 
+                    (
+                        <>
+                            <h1 className="n-cols-3">Curso: {this.state.cursoActual.tituloCurso}</h1>
+                            <img className="m-cols-1" src={this.state.cursoActual.imagenCurso} alt={this.state.cursoActual.tituloCurso}/>
+                            <p className="m-cols-2">Profesor: {this.state.cursoActual.profesor}</p>
+                        </>
+                    ) :
+                    (
+                        <h1>
+                            No se encontro la página
+                        </h1>
+                    )
+                }
+            </div>
+        )
+    }
+}
+
+export default CourseInt */
